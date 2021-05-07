@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #111;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.logo{
+    position: relative;
+    font-size:10rem !important;
+    color: 	 #009900;
+    text-shadow: 0 0 50px #ff3333,
+                 0 0 100px #ff3333,
+                 0 0 150px #ff3333,
+                 0 0 200px  #ff1a1a,
+                 0 0 250px  #ff1a1a;
+animation:animate 5s linear infinite;
+}
+@keyframes animate {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
